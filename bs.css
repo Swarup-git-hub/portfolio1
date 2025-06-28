@@ -65,7 +65,7 @@ body {
 }
 
 .profile-photo:active :hover {
-    /* animation: spin 5s infinite;*/
+    animation: spin 5s infinite;
 }
 
 .left span {
@@ -150,12 +150,6 @@ body {
     animation: fadeIn 2s ease-in-out;
 }
 
-.img1 {
-    position: relative;
-
-    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, transparent, aqua);
-}
-
 .img1 img {
     mask-image: url(./swarup2.jpg);
     margin: 0;
@@ -164,16 +158,8 @@ body {
     object-fit: scale-down;
     border-radius: 35px;
     position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(129, 205, 253, 0.5);
+    border: 1px solid #ffffff;
     animation: fadeIn 2s ease-in-out;
-
-}
-
-.img1 img:hover {
-    transform: scale(1.2);
-    transition: 0.5s ease-in-out;
-    border: 3px solid aqua;
 
 }
 
@@ -220,8 +206,7 @@ body {
 }
 
 button:hover {
-    transform: scale(1.2);
-    transition: 2s ease;
+    scale: 1.2 1s;
     color: aqua;
     border-color: aqua;
     transition: color 0.3s, text-decoration 0.3s;
@@ -277,131 +262,64 @@ h1 {
 }
 
 .skill {
-    width: 300px;
-}
-
-.skill {
-    margin: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(129, 205, 253, 0.5);
-    width: 50%;
-    height: 75vh;
-    padding: 20px;
-    justify-self: center;
+    width: 100%;
+    height: 100vh;
     animation: fadeIn 2s ease-in-out;
 }
 
-.skills_box h2 {
+.skills_box {
+    margin: 90px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(129, 205, 253, 0.5);
+    width: 40%;
+    height: 70%;
+    padding: 20px;
     justify-self: center;
+    animation: fadeIn 2s ease-in-out;
+
 }
 
-.skills_box img {
-    width: 20px;
-}
-
-.skill-name {
-    font-size: 16px;
-    margin-bottom: 5px;
+.skills_box h2 {
+    padding-left: 135px;
+    padding-bottom: 12px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .skill-bar {
-    background-color: aquamarine;
-    border-radius: 20px;
+    position: relative;
+    background: #e0e0e0;
+    border-radius: 25px;
     overflow: hidden;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
-.skill-level span {
-    justify-self: center;
+.skill-bar--inner {
+    height: 25px;
+    background: linear-gradient(90deg, #4caf50, #81c784);
+    border-radius: 25px;
+    transition: width 0.4s ease-in-out;
 }
 
-.skill-level {
-    height: 30px;
-    border-radius: 20px;
-    text-align: right;
-    align-items: center;
-    padding-right: 10px;
-    line-height: 30px;
-    color: #100E09;
-    font-size: 14px;
-    width: 0;
-    transition: width 1s ease-in-out;
-    animation: fillSkill 1s ease-in-out forwards;
-}
-
-.skill-level.c {
-    background-color: #fff;
-    border: 3px solid aquamarine;
-    animation-delay: 0.5s;
-    animation-duration: 2s;
-    width: 68%;
-}
-
-.skill-level.python {
-    border: 3px solid aquamarine;
-    background-color: #fff;
-    animation-delay: 0.5s;
-    animation-duration: 2s;
-    width: 70%;
-}
-
-.skill-level.java {
-    background-color: #fff;
-    border: 3px solid aquamarine;
-    animation-delay: 0.5s;
-    animation-duration: 2s;
-    width: 65%;
-}
-
-.skill-level.html {
-    background-color: #fff;
-    border: 3px solid aquamarine;
-    animation-delay: 0.5s;
-    animation-duration: 2s;
-    width: 72%;
-}
-
-.skill-level.css {
-    background-color: #fff;
-    border: 3px solid aquamarine;
-    animation-delay: 0.5s;
-    animation-duration: 2s;
-    width: 68%;
-}
-
-@keyframes fillSkill {
-    0% {
-        width: 0;
-    }
-
-    68% {
-        width: 68%;
-    }
-
-    70% {
-        width: 70%;
-    }
-
-    65% {
-        width: 65%;
-    }
-
-    72% {
-        width: 72%;
-    }
-
-    68% {
-        width: 68%;
-    }
+.skill-bar-label {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 60%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .contact {
     width: 100%;
-    height: 110vh;
+    height: 100vh;
+    padding: 20px;
     max-width: 600px;
-    margin: 15px auto;
+    margin: 10px auto;
     background-color: #100E09;
+    /* Dark gray background for the form container */
     border-radius: 10px;
-    animation: fadeIn 2s ease-in-out;
     box-shadow: 0 0 10px rgba(129, 205, 253, 0.5);
 }
 
@@ -432,16 +350,15 @@ h1 {
 
 .semi_contact p {
     width: 455px;
+    height: 12vh;
     font-size: 15px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     animation: fadeIn 2s ease-in-out;
 }
 
 .forms {
-    width: 80%;
-    height: 77vh;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(129, 205, 253, 0.5);
 }
@@ -453,24 +370,21 @@ h1 {
 
 .form-gen,
 label {
+    display: flex;
     font-size: 14px;
     animation: fadeIn 2s ease-in-out;
 }
 
 .form-group label {
-    align-self: center;
-    text-align: center;
+    text-align: end;
     animation: fadeIn 2s ease-in-out;
 }
 
 .form-group input {
+    display: flex;
     border-radius: 18px;
     padding: 8px;
     animation: fadeIn 2s ease-in-out;
-}
-
-.form-gender :hover {
-    color: aqua;
 }
 
 .form-group input:hover {
@@ -479,7 +393,6 @@ label {
 
 .bt {
     display: flex;
-
 }
 
 .bt1:hover {
@@ -492,132 +405,6 @@ label {
     transition: 0.5s ease;
 }
 
-.socials {
-    width: 100%;
-    height: 5vh;
-}
-
-footer {
-    width: 100%;
-    height: 35vh;
-    justify-items: center;
-    background-color: #100E09;
-    animation: fadeIn 2s ease-in-out;
-    box-shadow: 0 0 10px rgba(129, 205, 253, 0.5);
-}
-
-footer a {
-    color: aqua;
-    display: flex;
-    justify-self: center;
-    cursor: pointer;
-}
-
-footer a:hover {
-    transform: scale(1.5);
-    transition: 0.5s ease;
-}
-
-.connects {
-    display: flex;
-}
-
-.connects img {
-    width: 30px;
-}
-
-.connects a {
-    width: 50px;
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    .nav-bar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-photo img {
-        height: 30px;
-        width: 30px;
-    }
-
-    .left span {
-        font-size: 20px;
-    }
-
-    .right a {
-        font-size: 20px;
-    }
-
-    .home2 {
-        flex-direction: column;
-        align-items: center;
-        padding: 10% 0;
-    }
-
-    .img1 img {
-        width: 180px;
-    }
-
-    .text h2 {
-        font-size: 24px;
-        transform: scale(1.2);
-    
-    }
-
-    .text p {
-        font-size: 12px;
-    }
-
-    button {
-        font-size: 12px;
-        padding: 5px;
-        margin: 12px 24px;
-    }
-
-    .abt span {
-        font-size: 40px;
-    }
-
-    .abt p {
-        font-size: 16px;
-    }
-
-    .skill {
-        width: 90%;
-        height: auto;
-    }
-
-    .contact {
-        width: 90%;
-        height: auto;
-    }
-
-    .form-group label, 
-    .form-group input {
-        font-size: 12px;
-    }
-
-    .socials {
-        height: 8vh;
-    }
-
-    footer {
-        height: auto;
-    }
-
-    .connects img {
-        width: 20px;
-    }
-
-    .connects a {
-        width: 30px;
-    }
-}
 
 @media only screen and (max-width: 568px) {
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');

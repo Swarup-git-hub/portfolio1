@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="300 ;https://google.com">
-    <title>PORTFOLIO</title>
+    <title>experiment</title>
     <link rel="stylesheet" href="bs.css">
-    <link rel="icon" href="profile-user.svg" type="image/svg">
 </head>
 <!--color=robin egg blue;black olive-->
 <body>
@@ -29,13 +27,13 @@
     </nav>
 <section>
     <div class="home2" id="home">
-       <div class="img1"> <img src="swarup.jpg" alt="SWARUP Profile Picture" width="250" height="250" ></div>
+       <div class="img1"> <img src="swarup2.jpg" alt="SWARUP Profile Picture" width="250" height="250" ></div>
         <div class="text">
           <h2>B HEMA SWARUP</h2>
           <p>HELLO, WELCOME TO MY PORTFOLIO.
             Introducing myself with a field of web designing /develoment.
             In an attempt to showcase my skills and experience .Here, it is my pleasure to introduce myself</p>
-         <a href="#connect"><button>Connect</button></a>
+         <a href="#contact"><button>Connect</button></a>
         </div>
     </div>
 </section>
@@ -58,44 +56,35 @@
 
             <!--skills page -->
 <section>
-    <h1 id="skills">SKILLS</h1>
-    <div class="skill" >
-        
-        <div class="skills_box">
-            <h2>Technical Skills</h2>
-            <div class="skill-name">C</div>
-              <div class="skill-bar">
-                <div class="skill-level c"><span>68%</span><img src="c(icon).svg" alt="img"></div>
-                
-              </div>
-            </div>
-        <div class="skills_box">
-        <div class="skill-name">PYTHON</div>
-            <div class="skill-bar">
-                <div class="skill-level python"><span>70%</span><img src="python.svg" alt="img"></div>
-                
-            </div>
-        </div>
-        <div class="skills_box">
-            <div class="skill-name">JAVA</div>
-            <div class="skill-bar">
-                <div class="skill-level java"><span>65%</span><img src="java.svg" alt="img"></div>
-                
-            </div>
-        </div>
-            <div class="skills_box">
-                <div class="skill-name">HTML</div>
-                <div class="skill-bar">
-                    <div class="skill-level html"><span>72%</span><img src="html5.svg" alt="img"></div>
-                    
-                </div>
-        </div>
-        <div class="skills_box">
-            <div class="skill-name">BASIC CSS</div>
-            <div class="skill-bar">
-                <div class="skill-level css"><span>68%</span><img src="css3.svg" alt="img"></div>
-                
-            </div>
+    <div class="skill" id="skills">
+        <h1>SKILLS</h1>
+    <div class="skills_box">
+        <h2>Technical Skills</h2>
+        <h3>C</h3>
+         <div class="skill-bar">
+            <div class="skill-bar--inner skill-level-75"></div>
+            <span class="skill-bar-label">68%</span>
+         </div>
+        <h3>PYTHON</h3>
+         <div class="skill-bar">
+            <div class="skill-bar--inner skill-level-75"></div>
+            <span class="skill-bar-label">70%</span>
+          </div>
+        <h3>JAVA</h3>
+         <div class="skill-bar">
+            <div class="skill-bar--inner skill-level-75"></div>
+            <span class="skill-bar-label">65%</span>
+          </div>
+        <h3>HTML</h3>
+         <div class="skill-bar">
+            <div class="skill-bar--inner skill-level-75"></div>
+            <span class="skill-bar-label">72%</span>
+          </div>
+        <h3>BASIC CSS</h3>
+         <div class="skill-bar">
+            <div class="skill-bar--inner skill-level-75"></div>
+            <span class="skill-bar-label">68%</span>
+         </div>
         </div>
     </div>
 </section>
@@ -109,19 +98,19 @@
         <div class="semi_contact">
         <p>Suggestions can be considered by filling the form below. Please convey your suggestions in the "remarks" box below.
            And connect with me on social media platforms</p>
-        <form action="https://api.web3forms.com/submit" method="POST" class="forms">
+        <form action="https://api.web3forms.com/submit" method="post" class="forms">
             <input type="hidden" name="access_key" value="ec125111-c79a-428c-b432-7053b87ed3cc">
             <div class="form-group">
                 <label for="Name">Name:</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required >
+                <input type="text" id="name" placeholder="Enter your name" required>
             </div>
 
             <div class="form-group">
                 <label for="Occupation">Occupation:</label>
-                <input type="text" name="occupation" id="occupation" placeholder="Enter your occupation">
+                <input type="text" id="occupation" placeholder="Enter your occupation">
             </div>
 
-            <div class="form-group">
+            <div class="form-gen">
                 <label>Gender:</label>
                 <div class="form-gender">
                     <label for="Male">
@@ -142,18 +131,19 @@
             </div>
             <div class="form-group">
                 <label for="Email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="email" required>
+                <input type="email" id="email" placeholder="email" required>
             </div> 
 
             <div class="form-group">
                 <label for="Suggestions">Suggestions:</label>
-                <input type="text" name="suggestions" id="suggestions" placeholder="suggestions / ideas" required>
+                <input type="text" id="suggestions" placeholder="suggestions" required>
             </div>
 
               <div class="bt">
+                 
                 <button type="submit" class="bt1">Submit</button>
                 <button type="reset" class="bt2"> reset</button> 
-              </div>     
+              </div>      
           </form>
         </div>
     </div>
@@ -161,18 +151,9 @@
         <!--Footer section-->
 
         <footer>
-            <div class="socials" id="connect">
-
-            </div>
-            <div class ="foot">
-                <p>connect with socials :</p>
-                <div class="connects">
-                <a href="https://www.instagram.com/hemaswarup_52?igsh=ZnNqYjNpcmVveGpv" ><img src="instagram.svg" alt="instagram logo" ></a>
-                <a href="https://www.linkedin.com/in/hema-swarup-bande-752341314"><img src="linkedin.svg" alt="linkedin logo" ></a>
-                <a href="https://github.com/Swarup-git-hub"><img src="github.svg" alt="Github logo" ></a>
-                </div>
+            <div class ="text1">
                 <span> Created By
-                <a href="#">B.S</a>
+                <a href="#">exp</a>
                 &#169;2025 All Rights Reserved</span>
              </div>
            
